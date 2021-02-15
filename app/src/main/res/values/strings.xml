@@ -8,4 +8,6 @@
     <string name="usuario">Usuario</string>
     <string name="tipo_de_reporte">Tipo de Reporte</string>
     <string name="buscar">Buscar</string>
+    <string name="Cargar">Selecionar imagen</string>
+    <string name="cargar_imagem">Cargar Imagem</string>
 </resources>

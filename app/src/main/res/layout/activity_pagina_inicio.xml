@@ -27,7 +27,7 @@
             android:id="@+id/btnBuscar"
             android:layout_width="144dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="250dp"
+            android:layout_marginLeft="220dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
             android:text="@string/buscar" />
@@ -48,8 +48,8 @@
                 android:id="@+id/floatingActionButtonAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
                 android:layout_marginLeft="320dp"
+                android:clickable="true"
                 app:srcCompat="@android:drawable/ic_input_add" />
         </LinearLayout>
 
