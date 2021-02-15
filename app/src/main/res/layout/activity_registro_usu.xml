@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
     tools:context=".MainActivity">
+
+
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -23,10 +26,10 @@
                 android:layout_width="151dp"
                 android:layout_height="113dp"
                 android:layout_marginBottom="40dp"
-                app:srcCompat="@drawable/redes" />
+                app:srcCompat="@drawable/logoredes1" />
 
             <EditText
-                android:id="@+id/edtUsuario"
+                android:id="@+id/edtRegisUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -34,12 +37,25 @@
                 android:backgroundTint="@android:color/darker_gray"
                 android:drawableLeft="@drawable/icon_email"
                 android:ems="10"
-                android:hint="Usuario"
+                android:hint="@string/usuario"
                 android:inputType="textPersonName"
                 android:paddingLeft="5dp" />
 
             <EditText
-                android:id="@+id/edtPassword"
+                android:id="@+id/edtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:drawableLeft="@drawable/icon_email"
+                android:ems="10"
+                android:hint="@string/correo"
+                android:inputType="textPersonName"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/edtRegisPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -53,18 +69,8 @@
                 android:paddingLeft="5dp" />
 
             <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="15dp"
-                android:background="#1976d2"
-                android:text="@string/iniciar_sesi_n"
-                android:textColor="#FFF"
-                android:textSize="18sp" />
-            <Button
-                android:id="@+id/btnirRegis"
+                android:id="@+id/btnRegistrase"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -73,7 +79,21 @@
                 android:background="#1976d2"
                 android:text="@string/registrarse"
                 android:textColor="#FFF"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                app:backgroundTint="#A41354C3" />
+
+            <Button
+                android:id="@+id/btnIrLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:background="#1976d2"
+                android:text="@string/regresar"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                app:backgroundTint="#A41354C3" />
 
         </LinearLayout>
     </FrameLayout>

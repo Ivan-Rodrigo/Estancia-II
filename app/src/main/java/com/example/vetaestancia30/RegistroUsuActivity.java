@@ -20,46 +20,40 @@ import com.android.volley.toolbox.Volley;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
-    EditText edtUsuario,edtPassword;
-    Button btnLogin,btnRegis;
+public class RegistroUsuActivity extends AppCompatActivity {
+
+    EditText edtUsu,edtCorreo,edtPass;
+    Button btnAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_registro_usu);
 
-        edtUsuario=(EditText)findViewById(R.id.edtUsuario);
-        edtPassword=(EditText)findViewById(R.id.edtPassword);
-        btnLogin=(Button) findViewById(R.id.btnLogin);
-        btnRegis=(Button) findViewById(R.id.btnirRegis) ;
+        edtUsu = (EditText) findViewById(R.id.edtRegisUsuario);
+        edtCorreo = (EditText)findViewById(R.id.edtCorreo);
+        edtPass= (EditText)findViewById(R.id.edtRegisPassword);
+        btnAdd = (Button)findViewById(R.id.btnRegistrase);
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                valida("http://192.168.100.14/Android/validar.php");
-            }
-        });
-
-        btnRegis.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,RegistroUsuActivity.class));
+               AddUsu("http://192.168.100.14/Android/addUsuario.php");
             }
         });
 
 
     }
 
-    private void valida(String URL){
+    private void AddUsu(String URL){
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 if(!response.isEmpty()){
-                    Intent intent = new Intent(getApplicationContext(),PaginaInicioActivity.class);
+                    Intent intent = new Intent(getApplicationContext(),PrincipalActivity.class);
                     startActivity(intent);
                 }else {
-                    Toast.makeText(MainActivity.this,"USUARIO O CONTRASEÑA INCORRECTA ",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RegistroUsuActivity.this,"Algo Salio mal",Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -70,15 +64,16 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("cai aki");
                 System.out.println(error.toString());
                 System.out.println("__________________________");
-                Toast.makeText(MainActivity.this,error.toString(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegistroUsuActivity.this,error.toString(),Toast.LENGTH_SHORT).show();
 
             }
         }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String,String> parametros = new HashMap<String, String>();
-                parametros.put("usuario",edtUsuario.getText().toString());
-                parametros.put("password",edtPassword.getText().toString());
+                parametros.put("usuario",edtUsu.getText().toString());
+                parametros.put("correo",edtCorreo.getText().toString());
+                parametros.put("password",edtPass.getText().toString());
                 return parametros;
             }
         };
