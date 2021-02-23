@@ -1,0 +1,18 @@
+                 COMPROBANTE DE COMPRA 
+               AGENCIA DOS RUEDAS LOCAS 
+  Fecha de Venta:2020-02-06                                 
+                                                           
+ Cliente:                                                  
+f	Con Edad De :4                          
+                                                           
+      Moto :wefwee Modelo :dfd
+      Descripcion: wef Con :4 Cilindros
+      Precio :$44.0     
+      Total a Pagar  $:44.0
+      Pago con $: 55.0                                     
+      Cambio  $:11.0                              
+                                                           
+                                                           
+                                                           
+                                                           
+ticket del dia sin valor fisca                             

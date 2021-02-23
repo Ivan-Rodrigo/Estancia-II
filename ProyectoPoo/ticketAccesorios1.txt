@@ -1,0 +1,13 @@
+                 COMPROBANTE DEL DIA                     
+               AGENCIA DOS RUEDAS LOCAS                   
+                                                           
+        Fecha:2020-02-06
+                                                           
+      Descripcion :Casco Fox
+      Precio $: 1050.0
+      Total a Pagar $:1050.0
+      Pago con $:1100.0
+      Cambio $:50.0
+                                                           
+ticket del dia sin valor fiscal                             
+                                                           

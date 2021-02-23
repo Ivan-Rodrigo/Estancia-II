@@ -1,0 +1,9 @@
+                 COMPROBANTE DE COMPRA                     
+               AGENCIA DOS RUEDAS LOCAS                   
+                                                           
+      Los Poductos Vendidos Fueron :
+   :Casco Fox
+      El total Vendido Fue $:1050.0
+                                                           
+ticket del Final del dia                                   
+                                                           

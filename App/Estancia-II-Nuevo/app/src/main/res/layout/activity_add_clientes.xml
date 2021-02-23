@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".AddClientesActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtNombrecli"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Nombre"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/edtDocumento"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Documento"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/edtEmailCli"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Email"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/edtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Telefono"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/edtDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Direccion"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/edtfechaNa"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Fecha de nacimiento"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/edtFechaAdd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Fecha"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:id="@+id/btnAgregarClient"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:text="Agregar"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                app:backgroundTint="#AD0223F8" />
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

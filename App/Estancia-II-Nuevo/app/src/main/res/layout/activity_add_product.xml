@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Spinner
+
+                android:id="@+id/categoria"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dip"
+
+                android:hint="Id "
+                android:background="#B2BFE1CB"/>
+
+
+
+            <EditText
+                android:id="@+id/codigo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Codigo"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Descripcion"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+
+
+            <EditText
+                android:id="@+id/stock"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Stock"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/precioc"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Precio de compra"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/preciov"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="Precio de venta"
+
+                android:inputType="text"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/fechar"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="8dp"
+                android:background="#B2BFE1CB"
+                android:backgroundTint="@android:color/darker_gray"
+                android:ems="10"
+                android:hint="fecha"
+
+                android:inputType="date"
+                android:paddingLeft="5dp" />
+
+            <Button
+                android:id="@+id/btnImagen"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:text="@string/cargar_imagem"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                app:backgroundTint="#AD0223F8" />
+
+
+
+            <Button
+                android:id="@+id/btnAgregarProduc"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:text="Agregar"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                app:backgroundTint="#AD0223F8" />
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

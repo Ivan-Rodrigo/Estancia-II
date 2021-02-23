@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Veta Estancia3.0"
